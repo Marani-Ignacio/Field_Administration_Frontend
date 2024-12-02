@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 40px;
+  max-width: 500px; 
+  background: rgba(18, 18, 18, 0.9);
+  backdrop-filter: blur(20px); 
+  box-shadow: 0 0 20px rgba(201, 245, 6, 0.7); 
+  border-radius: 40px;
+  color: white;
+  padding: 2rem 1rem;
+  animation: glow 1.5s infinite alternate; 
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  background: transparent;
+  border: 2px solid rgba(115, 223, 73, 0.6); 
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 15px 20px;
+  box-sizing: border-box; 
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #b9fbc0; 
+  background-color: #3a3a3a; 
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #b9fbc0; 
+}
+
+button {
+  width: 100%;
+  max-width: 200px;
+  height: 45px;
+  background: #fff;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+button[type="button"] {
+  background-color: #f2f2f2;
+}
+
+button[type="submit"]:hover {
+  background-color: #6cfc6f;
+}
+button[type="button"]:hover {
+  background-color: #fa5c2c;
+}
+
+@media (max-width: 540px) {
+  .form {
+    padding: 20px;
+  }
+  .container{
+    max-width: 400px;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .field {
+    margin-bottom: 1rem;
+  }
+
+  .input, select {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    height: 40px;
+  }
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 241, 43, 0.952), 0 0 60px rgba(201, 245, 6, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(0, 236, 51), 0 0 90px rgba(201, 245, 6, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(201, 245, 6, 0.5), 0 0 20px rgba(201, 245, 6, 0.3);
+  }
+}
+
+.error {
+  color: #e60000;
+  font-weight: bold;
+}
