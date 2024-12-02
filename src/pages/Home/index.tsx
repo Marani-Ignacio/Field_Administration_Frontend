@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <div className={styles.videoBackground}>
         <video autoPlay muted loop playsInline>
-          <source src="public/images/fondoHome.mp4" type="video/mp4" />
+          <source src="/images/fondoHome.mp4" type="video/mp4" />
           Tu navegador no soporta la reproducción de videos.
         </video>
       </div>
