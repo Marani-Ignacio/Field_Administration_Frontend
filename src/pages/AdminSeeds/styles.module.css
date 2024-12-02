@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+  }
+  
+  .container {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background:#222;;
+    min-height: 100vh;
+  }
+  
+.addButton {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .addButton:hover {
+    transform: scale(1.05); 
+    background: #2bd873; 
+    color: #fff; 
+  }
+  
+  .header {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #c7e4c7;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+  }
+  
+  .seed {
+    margin-top: 10px;
+    background-color: #2c2f33;
+    padding: 1.0rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(18, 18, 18, 0.9); 
+    border-radius: 40px;
+  }
+  
+  .seed:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 20px rgba(60, 255, 1, 0.918);
+  }
+  
+  .seed ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 0.75rem;
+  }
+  
+  .fieldItem {
+    background-color: #444;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fieldItem:hover {
+    background-color: #5e6165; 
+  }
+  
+  .fieldItem p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+  
+  .ButtonList {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center; 
+    gap: rem; 
+    margin-top: 1rem; 
+  }
+  
+  .editButton {
+    background: #ffffff;
+    color: #000000;
+  }
+  
+  .editButton:hover {
+    background: #2bd873;
+    color: #ffffff;
+  }
+  
+  .seeButton {
+    background: #f5f5f5;
+  }
+  
+  .seeButton:hover {
+    background: #6c5ce7;
+    color: #ffffff;
+  }
+  
+  .deleteButton {
+    background: #ffeaea;
+    color: #d63031;
+  }
+  
+  .deleteButton:hover {
+    background: #d63031;
+    color: #ffffff;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 241, 43, 0.952), 0 0 60px rgba(201, 245, 6, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px rgb(0, 236, 51), 0 0 90px rgba(201, 245, 6, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(201, 245, 6, 0.5), 0 0 20px rgba(201, 245, 6, 0.3);
+    }
+  }
