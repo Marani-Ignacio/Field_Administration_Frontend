@@ -35,7 +35,7 @@ const Header = () => {
 
   useEffect(() => {
     if (user && !userLoading) {
-      setIsAdmin(!!user.isAdmin); // Verificamos si el usuario es admin
+      setIsAdmin(!!user.isAdmin);
     }
   }, [user, userLoading]);
 
