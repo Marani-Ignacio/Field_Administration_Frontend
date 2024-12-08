@@ -98,7 +98,7 @@ const MyFields = () => {
                       className={styles.seeButton}
                     >
                       <img
-                        src="public/images/ver.png"
+                        src="/images/ver.png"
                         alt="See More"
                         className={styles.icon}
                       />
@@ -108,7 +108,7 @@ const MyFields = () => {
                       className={styles.editButton}
                     >
                       <img
-                        src="public/images/editar.png"
+                        src="/images/editar.png"
                         alt="Modify"
                         className={styles.icon}
                       />
@@ -118,7 +118,7 @@ const MyFields = () => {
                       className={styles.deleteButton}
                     >
                       <img
-                        src="public/images/eliminar.png"
+                        src="/images/eliminar.png"
                         alt="Delete"
                         className={styles.icon}
                       />
